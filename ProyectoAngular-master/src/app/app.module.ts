@@ -34,6 +34,8 @@ import { ContactBAModule } from './@components/contact-ba/contact-ba.module';
 import { LogoutModule } from './@components/logout/logout.module';
 import { ClienteModule } from './@components/cliente/cliente.module';
 import { RepoModule } from './@components/repo/repo.module';
+import { FServModule } from './@subComponent/f-serv/f-serv.module';
+
 
 
 @NgModule({
@@ -73,7 +75,9 @@ import { RepoModule } from './@components/repo/repo.module';
     ContactBAModule,
     LogoutModule,
     ClienteModule,
-    RepoModule
+    RepoModule,
+    FServModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

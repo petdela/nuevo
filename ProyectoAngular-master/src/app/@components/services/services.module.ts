@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ServicesComponent } from './services.component';
 import { TitleModule } from 'src/app/@subComponent/title/title.module';
 import { FServModule } from 'src/app/@subComponent/f-serv/f-serv.module';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 
@@ -11,7 +12,8 @@ import { FServModule } from 'src/app/@subComponent/f-serv/f-serv.module';
   imports: [
     CommonModule,
     TitleModule,
-    FServModule
+    FServModule,
+    AppRoutingModule
   ],
   exports: [ServicesComponent]
 })

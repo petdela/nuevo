@@ -56,7 +56,7 @@ exports.create = (req, res) => {
             }
             Cliente.create(cliente)
             .then(data1 => {
-              res.redirect('/users');
+              res.redirect('http://localhost:4200/Login');
             })
         })
         .catch(err => {
