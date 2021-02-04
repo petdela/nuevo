@@ -17,7 +17,7 @@ exports.findAll = (req, res) => {
   	
   	const mailOptions = {
         from: 'dmc.mailsender@gmail.com',
-        to: 'petterdelacruz99@outlook.com',
+        to: 'petterdelacruz99@outlook.com, samendoz@espol.edu.ec',
         subject: 'Reporte',
         text: 'Adjunto el JSON',
         attachments: [
