@@ -44,7 +44,7 @@ exports.create = (req, res) => {
     };
   Subs.create(suscriptor)
         .then(data => {
-            res.redirect('/subs');
+            res.redirect('http://localhost:4200');
         })
         .catch(err => {
             res.status(500).send({

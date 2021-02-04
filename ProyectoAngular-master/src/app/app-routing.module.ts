@@ -20,6 +20,7 @@ import { ModificarComponent } from './@components/modificar/modificar.component'
 import { NegociacionesComponent } from './@components/negociaciones/negociaciones.component';
 import { PoliticasComponent } from './@components/politicas/politicas.component';
 import { RegComponent } from './@components/reg/reg.component';
+import { RepoComponent } from './@components/repo/repo.component';
 import { ReportesComponent } from './@components/reportes/reportes.component';
 
 const routes: Routes = [
@@ -47,7 +48,8 @@ const routes: Routes = [
   {path: 'Login', component: LogComponent},
   {path: 'Registro', component: RegComponent},
   {path: 'Logout', component: LogoutComponent},
-  {path: 'Cliente', component: ClienteComponent}
+  {path: 'Cliente', component: ClienteComponent},
+  {path: 'AdminReporte', component: RepoComponent}
 ];
 
 @NgModule({

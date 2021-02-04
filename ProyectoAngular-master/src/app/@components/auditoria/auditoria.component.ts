@@ -12,6 +12,15 @@ export class AuditoriaComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarJson();
+    this.mostrar();
+  }
+
+
+  mostrar = () => {
+    let header = document.getElementsByTagName("app-header")[0] as HTMLElement;
+    let footer = document.getElementsByTagName("app-footer")[0] as HTMLElement;
+    header.style.display = "";
+    footer.style.display = "";
   }
 
   cargarJson = () => {

@@ -10,9 +10,17 @@ export class NegociacionesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.cargarJson();
+	this.cargarJson();
+	this.mostrar();
   }
   
+  mostrar = () => {
+    let header = document.getElementsByTagName("app-header")[0] as HTMLElement;
+    let footer = document.getElementsByTagName("app-footer")[0] as HTMLElement;
+    header.style.display = "";
+    footer.style.display = "";
+  }
+
 cargarJson = () => {
 
   fetch('https://raw.githubusercontent.com/RicardoVilcacundo/ProyectoDAWM/main/BizLand/assets/json/negociaciones.json')

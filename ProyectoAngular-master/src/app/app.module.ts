@@ -33,6 +33,7 @@ import { ContactBCModule } from './@components/contact-bc/contact-bc.module';
 import { ContactBAModule } from './@components/contact-ba/contact-ba.module';
 import { LogoutModule } from './@components/logout/logout.module';
 import { ClienteModule } from './@components/cliente/cliente.module';
+import { RepoModule } from './@components/repo/repo.module';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import { ClienteModule } from './@components/cliente/cliente.module';
     ContactBCModule,
     ContactBAModule,
     LogoutModule,
-    ClienteModule
+    ClienteModule,
+    RepoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

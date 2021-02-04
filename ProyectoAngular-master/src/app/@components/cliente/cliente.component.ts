@@ -66,6 +66,7 @@ export class ClienteComponent implements OnInit {
       })
     })
     this.ocultar();
+    this.mostrar();
   }
 
   ocultar = () => {
@@ -73,5 +74,11 @@ export class ClienteComponent implements OnInit {
     let footer = document.getElementsByTagName("app-footer")[0] as HTMLElement;
     header.style.display = "none";
     footer.style.display = "none";
+  }
+  mostrar = () => {
+    let iconosT=document.getElementsByClassName("twitter")[0] as HTMLElement;
+    iconosT.style.display = "";
+    let iconosT2=document.getElementsByClassName("facebook")[0] as HTMLElement;
+    iconosT2.style.display = "none";
   }
 }
