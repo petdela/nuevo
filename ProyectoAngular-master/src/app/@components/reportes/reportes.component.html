@@ -1,3 +1,4 @@
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <div class="containerA">
 
   <nav class="navbar">
@@ -52,12 +53,65 @@
         <div class="charts__left">
           <div class="charts__left__title">
             <div>
-              <h1>Reportes Diarios</h1>
+              <h1>Reportes Anuales</h1>
               <p></p>
             </div>
             <i class="fa fa-usd" aria-hidden="true"></i>
           </div>
-          <div id="apex1"></div>
+          <div id="apex1">
+            <div class="grafico1">
+              <p>Fromularios Recibidos por Mes</p>
+              <svg height="30%" width="100%">
+                <rect x="8%" width="8%" y="80%" height="20%" />
+                <rect x="16%" width="8%" y="90%" height="10%" />
+                <rect x="24%" width="8%" y="70%" height="0%" />
+                <rect x="32%" width="8%" y="80%" height="0%" />
+                <rect x="40%" width="8%" y="90%" height="0%" />
+                <rect x="48%" width="8%" y="60%" height="0%" />
+                <rect x="56%" width="8%" y="80%" height="0%" />
+                <rect x="64%" width="8%" y="85%" height="0%" />
+                <rect x="72%" width="8%" y="90%" height="0%" />
+                <rect x="80%" width="8%" y="75%" height="0%" />
+                <rect x="88%" width="8%" y="70%" height="0%" />
+                <rect x="96%" width="8%" y="95%" height="0%" />
+            </svg>
+            </div>
+            <div class="grafico1">
+              <p>Boletines Emitidos por Mes</p>
+              <svg height="30%" width="100%">
+                <rect x="8%" width="8%" y="99%" height="1%" />
+                <rect x="16%" width="8%" y="60%" height="40%" />
+                <rect x="24%" width="8%" y="99%" height="0%" />
+                <rect x="32%" width="8%" y="99%" height="0%" />
+                <rect x="40%" width="8%" y="99%" height="0%" />
+                <rect x="48%" width="8%" y="99%" height="0%" />
+                <rect x="56%" width="8%" y="99%" height="0%" />
+                <rect x="64%" width="8%" y="99%" height="0%" />
+                <rect x="72%" width="8%" y="99%" height="0%" />
+                <rect x="80%" width="8%" y="99%" height="0%" />
+                <rect x="88%" width="8%" y="99%" height="0%" />
+                <rect x="96%" width="8%" y="99%" height="0%" />
+            </svg>
+            </div>
+            <div class="grafico1">
+              <p>Usuarios Registrados por Mes</p>
+              <svg height="30%" width="100%">
+                <rect x="8%" width="8%" y="60%" height="40%" />
+                <rect x="16%" width="8%" y="90%" height="10%" />
+                <rect x="24%" width="8%" y="70%" height="0%" />
+                <rect x="32%" width="8%" y="80%" height="0%" />
+                <rect x="40%" width="8%" y="90%" height="0%" />
+                <rect x="48%" width="8%" y="60%" height="0%" />
+                <rect x="56%" width="8%" y="80%" height="0%" />
+                <rect x="64%" width="8%" y="85%" height="0%" />
+                <rect x="72%" width="8%" y="90%" height="0%" />
+                <rect x="80%" width="8%" y="75%" height="0%" />
+                <rect x="88%" width="8%" y="70%" height="0%" />
+                <rect x="96%" width="8%" y="95%" height="0%" />
+            </svg>
+            </div>
+            
+          </div>
         </div>
 
         <div class="charts__right">
@@ -79,7 +133,7 @@
             <app-little-card [nombre]="'Usuarios Registrados'" [valor]="'300'" [clase]="'card3'"></app-little-card>
             
 
-            <app-little-card [nombre]="'Visitas del mes'" [valor]="'1881'" [clase]="'card4'"></app-little-card>
+            <!--app-little-card [nombre]="'Visitas del mes'" [valor]="'1881'" [clase]="'card4'"></app-little-card-->
           </div>
         </div>
       </div>
