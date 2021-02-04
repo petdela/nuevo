@@ -1,0 +1,41 @@
+<div class="contenedorAdministrarContenido"> <!--container-->
+            
+    <header>Elimina un Servicio</header>
+    
+      <div class="progress-barra">
+        <div class="step">
+          <p>Selecciona</p>
+          <div class="bullet numero">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Elimina</p>
+          <div class="bullet numero">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+   
+
+    <div class="form-outer">
+
+      <form action="http://localhost:3000/serv/delete" method="POST" id="anadirServicio">
+
+        <div class="page slide-page">
+          <!--div class="title">Informacion Basica:</div-->
+          <div class="field">
+            <div class="label">Servicio:</div>
+            <select name="id" id="servAElim">
+              <option value="">Seleccione un Servicio.</option>
+            </select>
+          </div>
+          <div class="field">
+            <button class="submit">Eliminar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
