@@ -56,16 +56,14 @@
 
           <div class="form-outer">
 
-            <form action="#" id="anadirServicio">
+            <form action="http://localhost:3000/datosS" id="anadirServicio" method="POST">
 
               <div class="page slide-page">
                 <!--div class="title">Informacion Basica:</div-->
                 <div class="field">
-                  <div class="label">Selecciona un Reporte:</div>
-                  <select id="servAElim">
-                    <option value="">Todos los Cambios.</option>
-                    <option>Cambios Servicios</option>
-                    <option>Cambios Datos de Contacto</option>
+                  <div class="label">Selecciona un servicio:</div>
+                  <select id="servAElim" name="nombre">
+                    <option value="">Sin seleccionar.</option>
                   </select>
                 </div>
                 <div class="field">

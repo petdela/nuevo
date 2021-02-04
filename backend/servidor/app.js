@@ -12,7 +12,7 @@ var subsRouter = require('./routes/subs');
 var contactRouter = require('./routes/contact');
 var clientesRouter = require('./routes/cliente');
 var mailsenderRouter = require('./routes/mailsender');
-
+var datosSRouter = require('./routes/datosS');
 
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -58,6 +58,8 @@ app.use('/subs', subsRouter);
 app.use('/contact', contactRouter);
 app.use('/cliente',clientesRouter);
 app.use('/mailsender', mailsenderRouter);
+app.use('/datosS', datosSRouter);
+
 
 
 // catch 404 and forward to error handler

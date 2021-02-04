@@ -13,9 +13,30 @@ export class RepoComponent implements OnInit {
     this.carga();
     this.ocultar();
     this.ocultar2();
+    this.llenar();
   }
 
+  
+  llenar = () => {
+    fetch('http://localhost:3000/serv')
+    .then( (resultado) => {
+      return resultado.json();
+    })
+    .then( (data) => {
+      let select = document.getElementById("servAElim");
+      for(let servicio of data){
+        let opcion= document.createElement("option");
+        opcion.setAttribute("value",servicio.Titulo);
+        opcion.textContent=servicio.Titulo;
+        select.appendChild(opcion);
+      }
 
+    })
+
+    .catch( (error) => {
+      console.log("Error ",error)
+    });
+  }
   ocultar = () => {
     let header = document.getElementsByTagName("app-header")[0] as HTMLElement;
     let footer = document.getElementsByTagName("app-footer")[0] as HTMLElement;

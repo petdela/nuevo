@@ -1,29 +1,17 @@
 var mongoose = require('mongoose');
 
-const DatosSchema = new mongoose.Schema({
+const ServiciosSchema = new mongoose.Schema({
     _id: {
+        type: Object,
+    },
+    Fecha: {
         type: String,
     },
-    name: {
-        first: {type: String},
-        last: {type: String},
-    },
-    user: {
+    Nombre: {
         type: String,
     },
-    latitud: {
+    Modificacion: {
         type: String,
-    },
-    longitud: {
-        type: String,
-    },
-    tags: {
-        type: Array,
-        default: []
-    },
-    company: {
-        type: String,
-    },
-});
-
-module.exports = mongoose.model('datos', DatosSchema, "datos");
+    }
+    });
+module.exports = mongoose.model('Servicios', ServiciosSchema, "Servicios");
