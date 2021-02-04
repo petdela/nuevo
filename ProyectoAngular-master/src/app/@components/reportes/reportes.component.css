@@ -1,2 +1,12 @@
-
+svg {
+    border: 1px solid #000000;
+}
+rect {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: lightsteelblue;
+}
+rect:hover{
+    fill: steelblue;
+}
   
